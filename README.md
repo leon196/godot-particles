@@ -2,15 +2,15 @@
 
 ## GPU particles template in Godot engine.
 
-![preview of particles animation](./preview.gif)
+![preview of particles animation](./readme/preview.gif)
 
 ### Particles simulation with basic force fields rules.
 
-![preview of shader process](./preview_shader_process.png)
+![preview of shader process](./readme/preview_shader_process.png)
 
 ### Billboard shader with sphere impostor.
 
-![preview of shader render](./preview_shader_render.png)
+![preview of shader render](./readme/preview_shader_render.png)
 
 ### Particles shader preview
 
