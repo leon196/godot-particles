@@ -5,7 +5,7 @@
 
 [sub_resource type="ShaderMaterial" id=3]
 shader = ExtResource( 2 )
-shader_param/size = 0.089
+shader_param/size = 0.039
 
 [sub_resource type="OpenSimplexNoise" id=5]
 
@@ -32,7 +32,7 @@ shader_param/map_noise = SubResource( 6 )
 [node name="Spatial" type="Spatial"]
 
 [node name="Particles" type="Particles" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.431666, 1.3037, 1.69005 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.148661, 1.37333, 0.302053 )
 material_override = SubResource( 3 )
 extra_cull_margin = 10.0
 amount = 10000

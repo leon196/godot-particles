@@ -4,6 +4,9 @@
 code = "shader_type spatial;
 render_mode skip_vertex_transform;
 
+// Godot manual about spatial shaders
+// https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html
+
 uniform float size = 1.0;
 varying vec2 uv;
 
@@ -18,6 +21,8 @@ mat3 lookAt(vec3 from, vec3 to)
 void vertex()
 {
 	vec4 custom = INSTANCE_CUSTOM;
+	
+	// billboard (quad looking at camera)
 	vec3 world = (WORLD_MATRIX * vec4(0,0,0,1)).xyz;
     mat4 look = mat4(lookAt(world, CAMERA_MATRIX[3].xyz));
 	mat4 stack = INV_CAMERA_MATRIX * WORLD_MATRIX * look;
@@ -31,7 +36,13 @@ void vertex()
 void fragment()
 {
 	float dist = length(uv);
+	
+	// circle crop
 	if (dist>1.) discard;
+	
+	// color
 	ALBEDO = vec3(.5);
+	
+	// normal of sphere impostor
 	NORMAL = normalize(vec3(uv, 1.-(dist*dist)));
 }"

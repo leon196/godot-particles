@@ -1,5 +1,8 @@
 shader_type particles;
 
+// Godot manual about particles shaders
+// https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/particle_shader.html
+
 uniform float spawn_size = 0.1;
 uniform float collision_size = 0.1;
 uniform float curl_scale = 0.1;
