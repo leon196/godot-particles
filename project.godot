@@ -12,7 +12,7 @@ config_version=4
 
 config/name="Particles"
 run/main_scene="res://Scene Particles.tscn"
-config/icon="res://icon.png"
+config/icon="res://readme/preview_shader_render.png"
 
 [physics]
 
