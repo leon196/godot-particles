@@ -32,7 +32,7 @@ shader_param/map_noise = SubResource( 6 )
 [node name="Spatial" type="Spatial"]
 
 [node name="Particles" type="Particles" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.148661, 1.37333, 0.302053 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.294848, 1.25195, 0.302053 )
 material_override = SubResource( 3 )
 extra_cull_margin = 10.0
 amount = 10000
